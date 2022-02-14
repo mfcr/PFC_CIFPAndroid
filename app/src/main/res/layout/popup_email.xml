@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblAsunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/asunto"
+        android:fontFamily="@string/font1" />
+    <EditText
+        android:id="@+id/edtAsunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/intro_asunto"
+        android:fontFamily="@string/font2"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:importantForAutofill="no"/>
+    <TextView
+        android:id="@+id/lblMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mensaje"
+        android:fontFamily="@string/font1"/>
+    <EditText
+        android:id="@+id/edtMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/intro_mensaje"
+        android:fontFamily="@string/font2"
+        android:inputType="textMultiLine"
+        android:importantForAutofill="no"/>
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:src="@android:drawable/ic_dialog_email"
+        android:contentDescription="@string/guardar" />
+</LinearLayout>
